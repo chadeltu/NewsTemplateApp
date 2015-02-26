@@ -1,0 +1,35 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_ads"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <com.latu.qingcheng123.widget.AdsViewPager
+        android:id="@+id/vp_ads"
+        android:layout_width="match_parent"
+        android:layout_height="140dip" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dip"
+        android:layout_gravity="bottom"
+        android:background="#33000000"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_ads_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="2dip"
+            android:textColor="#ffffff" />
+
+        <LinearLayout
+            android:id="@+id/ll_ads_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="2dip" >
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_news_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/newsbg_listpage" >
+
+    <LinearLayout
+        android:id="@+id/ll_common"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <RelativeLayout
+            android:id="@+id/rl_main_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <!-- chadeltu 这里存在两倍概念 75表示150 -->
+
+            <ImageView
+                android:id="@+id/iv_left_image"
+                android:layout_width="75dip"
+                android:layout_height="50dip"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/image_holder_listpage"
+                android:contentDescription="@string/img_content_desc"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/item_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:layout_toRightOf="@id/iv_left_image" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_other_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_source"
+                style="@style/item_secondary_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:ellipsize="end"
+                android:maxWidth="160dip"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tv_comment_count"
+                style="@style/item_secondary_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:singleLine="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
